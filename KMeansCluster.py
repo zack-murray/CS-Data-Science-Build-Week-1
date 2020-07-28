@@ -46,7 +46,7 @@ class K_Means:
                 distances = [np.linalg.norm(features-self.centroids[centroid]) for centroid in self.centroids]
                 # Index value at min of distances
                 classification = distances.index(min(distances))
-                # Assign that feature set to centroid
+                # Features belongs to that centroid
                 self.classifications[classification].append(features)
 
             
