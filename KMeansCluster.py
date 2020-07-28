@@ -14,8 +14,8 @@ class K_Means:
     Maximum number of iterations of the k-means algorithm for a single run.
     '''
 
-    def __init__(self, k=2, tol=0.001, max_iter=300):
-        self.k = k
+    def __init__(self, n_clusters=2, tol=0.001, max_iter=300):
+        self.n_clusters = n_clusters
         self.tol = tol
         self.max_iter = max_iter
 
